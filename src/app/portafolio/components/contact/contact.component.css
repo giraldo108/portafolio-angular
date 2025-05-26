@@ -1,0 +1,59 @@
+.mi-contacto {
+    background-color: var(--contact-color); /* color4: #c5ecff */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+.sobre-mi-contacto {
+    width: 40%;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-mi-contacto h3 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color); /* color1: #0075c3 */
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    gap: 2rem;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacto-item i {
+    font-size: 40px;
+    color: var(--secondary-color); /* color2: #549add */
+}
+
+.contacto-item a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: color 0.3s;
+}
+
+.contacto-item a:hover {
+    color: var(--primary-color); /* color1: #0075c3 */
+}

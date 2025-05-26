@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+/* Fuentes y estilos base */
+
+:root {
+    --primary-color: #0075c3;     /* color1 */
+    --secondary-color: #549add;   /* color2 */
+    --accent-color: #8ec2f7;      /* color3 */
+    --contact-color: #c5ecff;     /* color4 */
+    --background-color: #fbffff;  /* color5 */
+    --text-dark: #212121;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para los componentes de PrimeNG */
+.p-menubar {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.p-menubar .p-menuitem-link {
+    color: var(--text-light) !important;
+}
+
+.p-menubar .p-menuitem-link:hover {
+    background-color: var(--accent-color) !important;
+    color: var(--text-dark) !important;
+}
+
+.p-button {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.p-button:hover {
+    background-color: var(--accent-color) !important;
+    color: var(--text-dark) !important;
+    border-color: var(--accent-color) !important;
+    transform: scale(1.05);
+}
+
+:root {
+  --primary-color: #2f2f55;        /* color del titulo sobre mi y contacto. */
+  --primary-color-text: #f0e9e9;   /* texto blanco sobre el botón */
+}
+

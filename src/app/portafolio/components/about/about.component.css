@@ -1,0 +1,72 @@
+.sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    /*fondo de sobre mi*/
+    background-color: rgb(245, 250, 250); 
+
+}
+
+.sobre-mi img {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(13, 13, 13, 0.3); /* sombra azul */
+}
+
+.sobre-mi-info {
+    width: 40%;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #dbfcfc; /* color del cuadro central */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(189, 42, 42, 0.15);
+}
+
+.sobre-mi-info h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.boton-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #5fa8dc; /* color del ícono de correo */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.boton-linkedin:hover {
+  background-color: #428abe; /* tono más oscuro al pasar el mouse */
+}
+
+.boton-linkedin i {
+  font-size: 1.2rem;
+}
+
+.icono-grande {
+  font-size: 100px;
+  color: black;
+}
+
+
