@@ -1,18 +1,20 @@
 <header>
+  <!-- Menú de navegación usando PrimeNG Menubar -->
   <p-menubar [model]="items" class="custom-menubar">
     <ng-template pTemplate="start">
       <div class="header-content">
         <h2>Portafolio</h2>
-          <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- CUIDADO: Esto está mal ubicado -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
       </div>
     </ng-template>
   </p-menubar>
 
+  <!-- Contenido principal: nombre y botón -->
   <main class="main">
     <div class="info-content">
       <h1>Daniela Gallego</h1>
       <button pButton type="button" class="cv-button" icon="pi pi-download" label="Download CV"></button>
-
     </div>
   </main>
 </header>

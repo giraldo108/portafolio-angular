@@ -1,59 +1,67 @@
+/* Sección principal de contacto */
 .mi-contacto {
-    background-color: var(--contact-color); /* color4: #c5ecff */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
+    background-color: var(--contact-color); /* Fondo personalizado (color4: #c5ecff) */
+    display: flex; /* Flexbox para organizar elementos en fila */
+    align-items: center; /* Centrado vertical de los elementos */
+    justify-content: center; /* Centrado horizontal */
+    gap: 50px; /* Espacio entre elementos hijos */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    margin: auto; /* Centrado automático */
+    text-align: center; /* Texto centrado */
 }
 
+/* Contenedor del texto dentro de la sección de contacto */
 .sobre-mi-contacto {
-    width: 40%;
-    color: var(--text-dark);
-    display: flex;
+    width: 40%; /* Ocupa el 40% del ancho del contenedor padre */
+    color: var(--text-dark); /* Color del texto desde variables CSS */
+    display: flex; /* Flexbox en columna */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centrado horizontal del contenido */
+    justify-content: center; /* Centrado vertical */
 }
 
+/* Título dentro de la sección de contacto */
 .sobre-mi-contacto h3 {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    color: var(--primary-color); /* color1: #0075c3 */
+    font-size: 5rem; /* Tamaño grande del título */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    color: var(--primary-color); /* Color principal (color1: #0075c3) */
 }
 
+/* Contenedor de los elementos de contacto (teléfono, email, etc.) */
 .contacto-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    gap: 2rem;
+    display: flex; /* Organiza los elementos en una fila */
+    justify-content: space-between; /* Espacio igual entre los ítems */
+    align-items: center; /* Alinea verticalmente */
+    width: 100%; /* Toma el 100% del ancho del contenedor padre */
+    max-width: 600px; /* Limita el ancho máximo */
+    margin: auto; /* Centra horizontalmente */
+    gap: 2rem; /* Espacio entre ítems */
 }
 
+/* Cada elemento de contacto individual */
 .contacto-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    display: flex; /* Alineación ícono-texto en línea */
+    align-items: center; /* Centrado vertical */
+    gap: 15px; /* Espacio entre el ícono y el texto */
 }
 
+/* Estilo de los íconos de contacto */
 .contacto-item i {
-    font-size: 40px;
-    color: var(--secondary-color); /* color2: #549add */
+    font-size: 40px; /* Ícono grande */
+    color: var(--secondary-color); /* Color secundario (color2: #549add) */
 }
 
+/* Estilo del enlace (correo, número, etc.) */
 .contacto-item a {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--text-dark);
-    transition: color 0.3s;
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+    color: var(--text-dark); /* Color del texto */
+    transition: color 0.3s; /* Transición suave al cambiar el color */
 }
 
+/* Cambio de color al pasar el mouse sobre el enlace */
 .contacto-item a:hover {
-    color: var(--primary-color); /* color1: #0075c3 */
+    color: var(--primary-color); /* Cambia al color principal (color1: #0075c3) */
 }

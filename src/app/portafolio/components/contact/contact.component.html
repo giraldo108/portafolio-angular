@@ -1,19 +1,30 @@
+<!-- Sección de contacto, identificada con id y clase para estilos -->
 <div id="mi-contacto" class="mi-contacto">
+
+  <!-- Contenedor del contenido textual y visual de la sección -->
   <div class="sobre-mi-contacto">
+    <!-- Título principal de la sección -->
     <h3>Contacto</h3>
     
+    <!-- Contenedor flexible para agrupar los métodos de contacto -->
     <div class="contacto-container">
-      <!-- Correo -->
+      
+      <!-- Item de contacto: Correo electrónico -->
       <div class="contacto-item">
+        <!-- Ícono de sobre usando Font Awesome -->
         <i class="fa-solid fa-envelope"></i>
+        <!-- Enlace de correo dinámico en Angular usando property binding -->
         <a [href]="'mailto:' + email" rel="noopener noreferrer">{{email}}</a>
       </div>
       
-      <!-- Instagram -->
+      <!-- Item de contacto: Instagram -->
       <div class="contacto-item">
+        <!-- Ícono de Instagram -->
         <i class="fa-brands fa-instagram"></i>
+        <!-- Enlace a Instagram dinámico, abre en nueva pestaña -->
         <a [href]="instagramUrl" target="_blank" rel="noopener noreferrer">{{instagramHandle}}</a>
       </div>
+
     </div>
   </div>
 </div>

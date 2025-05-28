@@ -1,76 +1,87 @@
+/* ============================================
+   Sección: MI BLOG - Estilos principales
+   ============================================ */
+
+/* Contenedor general de la sección del blog */
 .mi-blog {
-    background-color: #dbfcfc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
-    padding: 0 10px;
+    background-color: #dbfcfc;     /* Fondo azul claro */
+    display: flex;                 /* Contenido en línea (horizontal) */
+    align-items: center;           /* Centra los elementos verticalmente */
+    justify-content: space-between;/* Espacio entre los elementos hijos */
+    gap: 1rem;                     /* Espaciado entre elementos hijos */
+    width: 100vw;                  /* Ancho completo de la ventana */
+    height: 100vh;                 /* Altura completa de la ventana */
+    margin: auto;                  /* Centra horizontalmente */
+    text-align: center;           /* Centra el texto */
+    padding: 0 10px;              /* Espaciado interno horizontal */
 }
 
+/* Imagen decorativa o avatar en la sección */
 .mi-blog img {
-    width: 15%;
-    margin-left: 30px;
-    display: block;
+    width: 15%;                   /* Imagen ocupa el 15% del ancho */
+    margin-left: 30px;            /* Espacio a la izquierda */
+    display: block;               /* Elimina espacios no deseados */
 }
 
+/* Contenido textual del blog */
 .sobre-mi-blog {
-    width: 70%;
-    text-align: left;
-    color: var(--text-dark);
-    display: flex;
+    width: 70%;                   /* Ocupa el 70% del ancho */
+    text-align: left;             /* Alineación de texto a la izquierda */
+    color: var(--text-dark);      /* Usa la variable de color definida */
+    display: flex;                /* Contenedor flexible en columna */
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 1.5rem;
-    line-height: 1;
-    padding-left: 10%;
+    align-items: flex-start;      /* Alinea contenido a la izquierda */
+    justify-content: center;      /* Centra verticalmente */
+    font-size: 1.5rem;            /* Tamaño de letra general */
+    line-height: 1;               /* Espaciado entre líneas */
+    padding-left: 10%;            /* Separación a la izquierda */
 }
 
+/* Título o subtítulo dentro del contenido del blog */
 .sobre-mi-blog h4 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 2rem;
-    color: #4c5197;
+    font-size: 2em;               /* Tamaño grande del texto */
+    font-weight: bold;           /* Texto en negrita */
+    margin-top: 2rem;            /* Separación superior */
+    color: #4c5197;              /* Color morado oscuro */
 }
 
-/* Contenedor de botones */
+/* ============================================
+   Botones de acción (GitHub, ver más, etc.)
+   ============================================ */
+
+/* Contenedor de los botones */
 .botones-proyectos {
-    display: flex;
-    gap: 80px;
-    margin-top: 20px;
+    display: flex;               /* Muestra los botones en línea */
+    gap: 80px;                   /* Espacio entre los botones */
+    margin-top: 20px;            /* Separación del contenido anterior */
 }
 
-/* Botón Git */
+/* Botón personalizado para enlace a GitHub u otros proyectos */
 .boton-git {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #72d0e5; /* Azul del ícono */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;         /* Ícono y texto en una línea */
+    align-items: center;          /* Centra ícono y texto verticalmente */
+    gap: 8px;                     /* Espacio entre ícono y texto */
+    background-color: #72d0e5;    /* Azul celeste */
+    color: white;                 /* Texto blanco */
+    padding: 10px 20px;           /* Espaciado interno */
+    border: none;                 /* Sin bordes */
+    border-radius: 8px;           /* Bordes redondeados */
+    text-decoration: none;        /* Sin subrayado (enlaces) */
+    font-size: 1rem;              /* Tamaño del texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
 }
 
+/* Efecto hover para el botón */
 .boton-git:hover {
-  background-color: #428abe; /* Azul más oscuro al pasar el mouse */
-  transform: scale(1.05);
+    background-color: #428abe;    /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05);       /* Ligero aumento en el tamaño */
 }
 
+/* Ícono decorativo grande para acompañar visualmente la sección */
 .icono-grande {
-  font-size: 200px; /* ajusta según quieras */
-  color: #0e0e0e;  /* o cualquier color */
-  margin-bottom: 1rem;
-  align-items: center;
-  padding-left: 10rem;
-
+    font-size: 200px;             /* Tamaño muy grande del ícono */
+    color: #0e0e0e;               /* Color oscuro */
+    margin-bottom: 1rem;          /* Separación inferior */
+    align-items: center;          /* (No afecta, ya que no es contenedor) */
+    padding-left: 10rem;          /* Separación izquierda */
 }
-
-

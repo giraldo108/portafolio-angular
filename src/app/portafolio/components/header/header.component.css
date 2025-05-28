@@ -3,94 +3,109 @@
   height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-/* Fondo general */
+/* ================================
+   Fondo general del encabezado
+================================= */
 header {
-  background-color: #e6fdfd; /* aguamarina claro */
-  padding-bottom: 3rem;
-  height: 100%; /* Ocupa toda la altura del contenedor padre */
-  min-height: 100vh; /* Mínimo el alto de la pantalla */
-  display: flex;
-  flex-direction: column;
+  background-color: #e6fdfd; /* Color de fondo aguamarina claro */
+  padding-bottom: 3rem;       /* Espacio inferior */
+  height: 100%;               /* Ocupa toda la altura de su contenedor padre */
+  min-height: 100vh;          /* Asegura que al menos ocupe toda la pantalla */
+  display: flex;              /* Usa flexbox para el contenido */
+  flex-direction: column;     /* Los elementos hijos se apilan verticalmente */
 }
 
-/* Menú */
+/* ================================
+   Menú de navegación personalizado
+================================= */
 .custom-menubar {
-  background-color: #020202 !important;
-  padding: 1rem;
-  color: white;
-  border: none;
-  border-radius: 0;
+  background-color: #020202 !important; /* Fondo negro forzado */
+  padding: 1rem;                        /* Espaciado interior */
+  color: white;                         /* Texto en blanco */
+  border: none;                         /* Sin borde */
+  border-radius: 0;                     /* Esquinas cuadradas */
 }
 
-/* Contenido del menú */
+/* ================================
+   Contenido dentro del menú
+================================= */
 .header-content {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  display: flex;          /* Contenedor en línea con flexbox */
+  align-items: center;    /* Alinea los elementos verticalmente al centro */
+  gap: 1.5rem;            /* Espaciado entre elementos */
 }
 
 .header-content h2 {
-  color: white;
-  margin: 0;
-  font-family: monospace;
+  color: white;           /* Texto blanco */
+  margin: 0;              /* Sin márgenes */
+  font-family: monospace; /* Fuente monoespaciada */
 }
 
-/* Sección del nombre y botón */
+/* ================================
+   Sección principal del encabezado
+   Contiene nombre y botón de CV
+================================= */
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3rem;
-  flex-grow: 1; /* Hace que esta sección ocupe todo el espacio disponible */
+  display: flex;              /* Flexbox para centrar contenido */
+  justify-content: center;    /* Centra horizontalmente */
+  align-items: center;        /* Centra verticalmente */
+  padding-top: 3rem;          /* Espacio superior */
+  flex-grow: 1;               /* Toma el espacio restante disponible */
 }
 
+/* ================================
+   Cuadro con información personal
+================================= */
 .info-content {
-  background-color: rgb(244, 248, 252);
-  padding: 3rem 4rem;
-  border-radius: 25px;
-  box-shadow: 0 4px 15px rgba(1, 57, 65, 0.1);
-  text-align: center;
-  max-width: 800px;
-  width: 100%;
+  background-color: rgb(244, 248, 252);        /* Fondo claro */
+  padding: 3rem 4rem;                          /* Espaciado interior */
+  border-radius: 25px;                         /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(1, 57, 65, 0.1);  /* Sombra suave */
+  text-align: center;                          /* Texto centrado */
+  max-width: 800px;                            /* Máximo ancho */
+  width: 100%;                                 /* Ocupa todo el ancho posible */
 }
 
 .info-content h1 {
-  font-size: 3.2rem;
-  color: #111111;
-  font-family: var(--font-family);
-  margin-bottom: 2rem;
+  font-size: 3.2rem;                /* Tamaño grande del título */
+  color: #111111;                  /* Texto negro */
+  font-family: var(--font-family); /* Usa una fuente definida por variable */
+  margin-bottom: 2rem;             /* Separación inferior */
 }
 
-/* Botón debajo del nombre */
+/* ================================
+   Botón para descargar o ver CV
+================================= */
 .cv-button {
-  font-size: 1.1rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  background-color: #81c1e3; /* Azul estilo LinkedIn */
-  color: white; /* Texto blanco */
-  border: none;
-  font-family: var(--font-family);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.1rem;               /* Tamaño de fuente */
+  padding: 0.75rem 1.5rem;         /* Espaciado interior */
+  border-radius: 8px;              /* Bordes redondeados */
+  background-color: #81c1e3;       /* Azul tipo LinkedIn */
+  color: white;                    /* Texto blanco */
+  border: none;                    /* Sin borde */
+  font-family: var(--font-family);/* Fuente personalizada */
+  cursor: pointer;                /* Cursor en forma de mano */
+  transition: background-color 0.3s ease; /* Transición suave al hacer hover */
 }
 
 .cv-button:hover {
-  background-color: #30769b; /* Azul más oscuro al hacer hover */
+  background-color: #30769b; /* Color más oscuro al pasar el mouse */
 }
 
-
-/* Responsive */
+/* ================================
+   Estilos responsivos (pantallas pequeñas)
+================================= */
 @media (max-width: 768px) {
   .header-content {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column;     /* Elementos del menú apilados verticalmente */
+    align-items: flex-start;    /* Alineación al inicio */
   }
 
   .info-content {
-    padding: 2rem;
+    padding: 2rem;              /* Espaciado reducido */
   }
 
   .info-content h1 {
-    font-size: 2rem;
+    font-size: 2rem;            /* Tamaño de título reducido */
   }
 }

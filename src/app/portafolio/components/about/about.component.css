@@ -1,72 +1,72 @@
+/* Contenedor principal de la sección "Sobre mí" */
 .sobre-mi {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
+    display: flex; /* Utiliza flexbox para organizar los elementos hijos en una fila */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    gap: 50px; /* Espacio entre los elementos hijos */
+    width: 100vw; /* Ocupa todo el ancho de la ventana del navegador */
+    height: 100vh; /* Ocupa todo el alto de la ventana del navegador */
+    margin: auto; /* Centra el contenedor si es necesario */
+    text-align: center; /* Centra el texto en su interior */
     /*fondo de sobre mi*/
     background-color: rgb(245, 250, 250); 
 
 }
 
-.sobre-mi img {
-    width: 40%;
-    max-width: 400px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(13, 13, 13, 0.3); /* sombra azul */
-}
+
 
 .sobre-mi-info {
-    width: 40%;
-    color: var(--text-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    width: 40%; /* Ocupa el 40% del ancho del contenedor padre */
+    color: var(--text-dark); /* Usa una variable para el color del texto */
+    display: flex; /* Flexbox para organizar el contenido */
+    flex-direction: column;   /* Los elementos se colocan en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    font-size: 1.2rem; /* Tamaño de fuente base */
+    line-height: 1.5; /* Espaciado entre líneas */
     background-color: #dbfcfc; /* color del cuadro central */
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(189, 42, 42, 0.15);
+    padding: 30px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(189, 42, 42, 0.15); /* Sombra sutil para resaltar el cuadro */
 }
-
+/* Estilo para el título dentro de la información personal */
 .sobre-mi-info h3 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    font-size: 4rem; /* Tamaño grande para el título */
+    font-weight: bold; /* Fuente en negrita */
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+    color: var(--primary-color); /* Usa una variable CSS para el color del título */
+
 }
 
+/* Botón con enlace a LinkedIn */
 .boton-linkedin {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #5fa8dc; /* color del ícono de correo */
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  margin-top: 1rem;
-  font-size: 1rem;
+    display: inline-flex; /* Flexbox en línea para alinear ícono y texto */
+    align-items: center; /* Centra verticalmente el contenido del botón */
+    gap: 8px; /* Espacio entre ícono y texto */
+    background-color: #5fa8dc; /* Color azul para el fondo del botón */
+    color: white; /* Texto en color blanco */
+    padding: 10px 16px; /* Relleno interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Elimina subrayado en enlaces */
+    transition: background 0.3s ease; /* Transición suave al cambiar de color */
+    margin-top: 1rem; /* Espacio encima del botón */
+    font-size: 1rem; /* Tamaño de fuente */
 }
 
+/* Efecto al pasar el mouse sobre el botón */
 .boton-linkedin:hover {
-  background-color: #428abe; /* tono más oscuro al pasar el mouse */
+    background-color: #428abe; /* Cambia a un tono más oscuro de azul */
 }
 
+/* Estilo del ícono dentro del botón de LinkedIn */
 .boton-linkedin i {
-  font-size: 1.2rem;
+    font-size: 1.2rem; /* Tamaño del ícono */
 }
 
+/* Clase para íconos grandes (opcional para destacar íconos) */
 .icono-grande {
-  font-size: 100px;
-  color: black;
+    font-size: 100px; /* Tamaño muy grande */
+    color: black; /* Color negro */
 }
-
 
